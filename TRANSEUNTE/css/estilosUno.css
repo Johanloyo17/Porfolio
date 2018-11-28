@@ -1,0 +1,883 @@
+ 
+*{
+    margin: 0 ;
+    padding: 0 ;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#menuAdentro{
+    min-width: 100%;
+    min-height:  100%;
+    background-image: url(../img/La-calle-habla.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    
+
+}
+
+
+/* encabezado logo y boton menu */
+
+.encabezadoMenu{
+    margin: 0;
+    
+    padding: 0;
+    height: 10%;
+    z-index: 4;
+}
+
+
+.mascaraMenu2{
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    
+    opacity: .5;
+    background: #000;
+}
+.logoMenu{
+    width: 250px;
+    padding: 5px;
+    z-index: 2;
+}
+
+.logoMenu img{
+    width: 100%; height:100%;   
+}
+
+.logoMenu a{
+    z-index: 3;
+}
+
+.botonMenu {   
+    width: 70px;
+    z-index: 2;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    color: #b7b7b7;
+    cursor: pointer;
+    z-index: 4;
+    padding: 5px;  
+}
+
+
+/* RESPONSIVE ajuste de tamaño logo y boton de menu sm */
+@media (max-width: 575.98px) {
+    .logoMenu{
+        width: 180px;
+    }
+    .botonMenu { 
+        font-size: 30px !important;
+        width: 35px; height: auto;
+    }
+}
+/* aun mas pqueño */
+@media (max-width: 320px) {
+    .logoMenu{
+        width: 150px;
+    }
+    .botonMenu { 
+        font-size: 20px !important;
+    }
+}
+/* ajuste de tamaño logo y boton de menu */
+
+
+
+
+
+
+
+
+
+
+.cont-tituloMenu{
+width: 100%;
+height: inherit;
+color: #fff ;
+}
+
+.copysPortada{
+    position: relative;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin: 0; padding: 0;  
+    height: 70%;
+    line-height: .7;  
+}
+
+.subtitulo{ 
+    font-size: 18px; 
+}
+
+/* ajuste RESPONSIVE para tamaño lg de la alineacion y tamaño del titulo  y sub*/
+@media only screen and (min-width: 991px){
+    .copysPortada{
+        position: absolute; 
+        left: 35%;
+    }
+    .titulo{  
+        font-size: 8vw;
+        font-weight: 700;  
+    }
+    .subtitulo{ font-size: 1.8vw;}
+}
+
+
+@media (max-width: 575.98px) {
+    .titulo{  
+        font-size: 12vw ;
+        font-weight: 550;
+        text-align: center
+         
+    }
+    .subtitulo{ 
+        font-size: 3.3vw; 
+        text-align: center
+    }
+
+ }
+
+/* FIN de ajuste responsive */
+
+
+/* boton de video  y efectos del link*/
+/* 
+.videoCont{
+    width: 30%;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 40px;
+    border-top: 2px #bdbdbd solid;
+    border-bottom: 2px #a3a3a3 solid;
+    
+    
+    transition: all; transition-duration: .5s;
+    
+} */
+/* .videoCont:hover{
+}      
+.videoCont:active{         
+} */
+
+
+/* 
+
+.videoCont h6{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: #fff
+
+}
+
+.palabra{
+    color: #ff043a;
+}
+ */
+
+
+
+
+
+
+/************ SECCION DEL MENU ********/
+
+a:hover {
+    text-decoration: none;
+}
+
+.navegacion {
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none; 
+    background-image: url(../img/viejo-traseunte-rojo.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 3;
+}
+
+
+.contenedor-enlace {
+   
+    margin: 0 0;
+    text-align: right;
+    padding: 5px 10px;
+    transition-property:all;
+    transition-duration: .5s;
+}
+
+
+.subContenedorE{
+    
+    
+    display: inline-block;
+    padding: 0px 10px;
+    z-index: 2;
+    transition-property:all;
+    transition-duration: .5S;  
+}
+
+
+
+.subContenedorE:hover {
+    transform: translate(-1.1em );
+    border-right:solid 3px #2E2633;    
+    border-radius: 2.5%  2.5%;   
+    
+}
+
+
+.subContenedorE:hover .tituloDelMenu {
+    color: #ff043a ;
+    text-shadow: #EFFFCD 1px 1px 2px;
+    
+}
+
+
+    
+.contenedor-enlace h2 {
+    color: #EFFFCD ;
+    transition-property: all;
+    transition-duration: .5s
+}
+
+
+
+.tituloDelMenu{
+    font-size: 10Vh;
+    letter-spacing: 2vw;
+    font-weight: 950;
+    text-shadow: rgba(255, 255, 255, 0.616) 0px 0px 2px; 
+}
+
+/* subtitulos */
+.contenedor-enlace-toggle {
+    letter-spacing: 5px;
+    margin: .5em 5%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-.10em);
+    transition-property: all;
+    transition-duration: .5s
+}
+
+.subDelMenu{
+    color: #EFFFCD;
+    padding: 0;
+    font-size: 4vh;
+    letter-spacing: 1vw;
+    font-weight: bolder;  
+    margin: .5vh 0;
+    transition-duration:.5s;
+    display: inline-block;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: .5s
+}
+.subDelMenu:hover{
+    transform: translateX(-.6em);   
+}
+
+
+/* RESPONSIVE ajuste del los titulos y sub del menu */
+
+/* SM */
+@media (max-width: 575.98px) {
+    .tituloDelMenu{
+        font-size: 11.5vw;
+    }
+    .contenedor-enlace {
+        margin: 2vh 0 ;
+    }
+    .subDelMenu{
+        font-size: 6vw !important;
+        
+    }
+}
+
+/* aun mas pqueño */
+@media (max-width: 320px) {
+    .tituloDelMenu{
+        font-size: 10vw;
+    }
+    .contenedor-enlace {
+        margin: 2vh 0 ;
+    }
+    .subDelMenu{
+        font-size: 5vw !important;
+        
+    }
+}
+
+
+
+/* FIN SECCION DEL MENU */
+
+
+
+
+
+/* DIVISOR */
+
+.divisor{
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    
+}
+
+.sombra{
+    width: 100%; height: 30px;
+    
+}
+
+/* inicio de la segunda seccion */
+
+/* seccion del texto contenido destacado  */
+
+.cDestacado{
+    height: 100px;
+    color: #fff
+}
+
+.contenidoDestacado{
+    position: absolute;
+    left: -20px;
+    width: 150px;
+    transition: all; transition-duration: .5s
+}
+.cDestacado:hover .contenidoDestacado{
+    left: 0px;
+}
+
+
+.destacadoText1{
+    position: relative;
+    width: initial;
+    background-color: #000;
+    padding-left: 40px;
+    font-weight: 500
+}
+.destacadoText2{
+    position: relative;
+    width: 120%;
+    background-color: #000;
+    padding-left: 40px;
+    font-weight: 700
+}
+
+/* FIN seccion del texto contenido destacado  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* seccion Proyectos  ***************/
+
+/* .seccionProyecto{
+} */
+
+.proyectoTitulo{
+    padding: 10px 0;
+    width: 100%;
+    height: 10%;
+    background-color: #161616 ;
+    text-align: center;
+    color: #7a7a7a !important;
+    letter-spacing: 5px;
+    
+}
+.proyectoTitulo  h2 a{
+   font-size: 6vh  
+}
+
+.proyectoTitulo a:hover {
+   color: #fff;
+   text-shadow: 0px 0px 10px #7a7a7a
+}
+ 
+a:hover{color: inherit}
+
+.contenedorProyectos{   
+    width: 100%;
+    margin: 0;
+    
+}
+
+
+/* contenedor de los proyectos */
+.proyecto{  
+    height: 450px;
+}
+ 
+.textProyec{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    
+
+    
+}
+.textProyec h4, h6{
+    margin: 0;
+    
+    
+}
+
+.textProyec h4{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.textProyec  h6{
+    font-size: 16px ;
+    font-weight: 500;
+}
+
+.ciculoProyec{    
+    box-sizing: border-box;
+    width: 15vw;  
+    height: 15vw;  
+    background-size: cover;
+    background-position: center;
+    border: 6px #cccaca70 solid;
+    border-radius: 50%;
+    transition: all .3s
+}
+
+
+
+/* RESPONSIVE ajuste de el tamaño de los circulos y el texto */
+
+@media only screen and  (max-width: 991px){
+    .textProyec h4{ font-size: 40px;}
+    .textProyec  h6{font-size: 16px ;}
+    .ciculoProyec{    
+        width: 200px !important; 
+        height: 200px !important; 
+        }
+}
+
+@media (max-width: 766px) {
+    .ciculoProyec{    
+        width:180px !important; 
+        height: 180px  !important; 
+    }
+    .textProyec h4{ font-size: 35px; }
+    .textProyec  h6{font-size: 16px ;}
+}
+
+@media (max-width: 575.98px) {
+    .ciculoProyec{    
+        width:  150px !important; 
+        height: 150px !important; 
+    }
+    .textProyec h4{ font-size: 30px; }
+    .textProyec  h6{font-size: 14px ;}
+}
+
+@media (max-width: 330px) {
+    .textProyec h4{ font-size: 25px;}
+    .textProyec  h6{font-size: 13px ;}
+    
+   
+}
+
+
+
+
+.ciculoProyecUno{
+    background-image:url(../img/Mezcolanza.jpg);
+    position: relative;
+    z-index: 2;
+}
+
+.ciculoProyecDos{
+    background-image:url(../img/Cruzado\ Criollo.jpg);
+    position: relative;
+    z-index: 2; 
+}
+
+.ciculoProyecTres{
+    background-image:url(../img/Proyectos-01.jpg);
+    background-size: contain;
+    position: relative;
+    z-index: 2; 
+}
+
+
+/* EFECTOS DE EL CONTENEDORPROYECTO */
+.proyecto{
+    z-index: 1;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.027);    
+}
+
+.contenedorProyectos{
+    background-image: url(../img/carrusel-01.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;  
+    background-position: center;
+    transition: all .5s
+}
+
+/* efectos hover  del nombre del proyecto */
+
+
+
+a .textProyec:hover .nombreProyecto{
+    text-decoration: underline #ff043a;
+}
+
+a .textProyec:active .nombreProyecto{
+    color: #EFFFCD ;
+    text-shadow: #EFFFCD 0px 1px ;    
+}
+
+/* efectos hover de los circulos de proyecto */
+.proyecto1:hover .ciculoProyec{
+    border: solid 8px  #ff043adc !important;
+    box-shadow:  #fff  0px 0px 2px 2px;
+}
+.proyecto2:hover .ciculoProyec{
+    box-shadow:  #fff  0px 0px 2px 2px;
+    border: solid 8px  #ff043a !important;
+}
+.proyecto3:hover .ciculoProyec{
+    box-shadow:  #fff 0px 0px 2px 2px;
+    border: solid 8px  #ff043a !important;
+}
+
+
+
+a .circuloProyec:hover .ciculoProyec{
+    border: solid 8px  #ff043a70 !important;
+}
+
+
+/* EFECTOS A INCORPORAR CON JQ */
+.back1{
+    background-image: url(../img/carrusel-02.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;  
+    background-position: center
+}
+
+.back3{
+    background-image: url(../img/carrusel-03.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;  
+    background-position: center;
+}
+/* FIN seccion Proyectos  ***************/
+
+
+
+
+
+
+/************************* SECCION TRES***********************************************/
+
+/* tamaños */
+.abajo , .arriba{
+    min-height:65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+
+}
+.dere , .izq{
+    height: 65vh;     
+}
+/* fin tamaños */
+
+/* estilos de los cuadros de arriba */
+.imagen3{    
+    background-image: url(../img/manos.jpg);
+    background-size: cover; 
+    background-position: center;   
+}
+/* texto de los servicios */
+.texto3{
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: all .3s;
+    color: #7a7a7a;
+    text-align: center
+}
+
+.divTexto3:hover .texto3{
+    color:#ff043a !important;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #666666;
+} 
+.sombra2{
+    width:75% ;   
+    padding: 0
+}
+/* fin parte de arriba  */
+
+
+
+/* estilos abjo  */
+@media (min-width:766px){
+
+    .izq , .dere{
+        background-color: #e7e7e7
+    }
+}
+.mascaraForm{
+    background-image: url(../icon/COLOURlovers.com-Light_triangle.png);
+    opacity: .3;
+}
+/* estilos de el parrafo encontremonos */
+.parrafo3{
+    border-right: rgba(0, 0, 0, 0.075) 2px solid
+}
+
+.parrafo3 h6{
+    font-size:2em;
+    font-weight: 700;
+    text-align: end;
+    color:#ff043a
+}
+.parrafo3 h4{
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: end;
+}
+
+/* estilos formulario */
+.labelForm{
+    line-height: .7;
+    font-size: 1em;
+}
+
+.formulario{
+    border-radius: 20px;
+    opacity: .7;
+    box-shadow: rgb(41, 41, 41) 1px 3px 3px
+}
+
+
+.formulario:focus{
+opacity: 1;
+box-shadow: 0 0 .1rem .2rem #ff043ab6;
+}
+
+.boton {
+    background-color: #000;
+    font-size: 1.4em ;
+    letter-spacing: 2px; 
+    padding: 2.5px 10px ;
+    border-radius: 20px;
+    box-shadow: rgb(41, 41, 41) 1px 3px 3px ;
+    transition: all .3s   
+}
+
+.boton:hover {
+    border: #ff043ab6 solid 1px;
+    box-shadow:  rgb(41, 41, 41) 2px 5px 5px ;
+}
+
+.formDiv , .divTexto3{
+    position: relative;
+    z-index: 4;
+}
+
+
+/* mascara de el formulario */
+.mascaraForm{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-attachment: fixed;
+}
+.mascaraIzq{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-attachment: fixed;
+}
+    
+
+
+/* ajuste responsive para pantallas menores a md 766px  */
+@media only screen and      (max-width: 766px){   
+    .seccionTres{
+        background-image: url(../icon/chainsmoke.png) ;
+        background-attachment: fixed ;
+        filter: grayscale(100%);
+    }
+    .arriba{
+        width: 100%;
+        min-height:20vh !important;   
+    }
+   
+    .segunda , .izq{
+        padding: 5%  0;
+    }
+    .parrafo3{
+        border: none;
+        position: relative;
+        z-index: 4;
+    }
+    .dere , .izq{
+        height:auto;     
+    } 
+
+    .sombraES{
+        height: 5%;
+    }
+
+    .parrafo3 h6{font-size: 1.2em}
+    .parrafo3 h4{font-size: 1.7em}
+    .texto3{font-size: 1em}
+
+
+    /* mascaras */
+    .mascaraIzq{
+        background-color: #861f1f;
+        opacity: .2;     
+        transition: all .5s;     
+        /* border-radius: 30%   */
+    }  
+    .mascaraForm{
+        background-color: #d8d7d7;
+        opacity: .4;
+    }
+}
+/************************** FIN DE LA SECCION TRES********************* */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ajuste responsive de la seccion 3 */
+/* 
+
+@media only screen and      (max-width: 766px){
+    
+    .seccionTres{
+        background-image: url(../icon/chainsmoke.png)   
+    }
+    .primera{
+        width: 100%;
+        height:20% !important
+    }
+   .segunda{
+        height: auto
+    }
+
+
+
+
+
+} */
+
+
+
+/* ARRIbA
+.imagen3{    
+    background-image: url(../img/manos.jpg);
+    background-size: cover; 
+    background-position: center;   
+}
+
+.sombra2{
+
+    width:50% ;
+    
+    padding: 0
+
+}
+
+.texto3{
+    
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: all .3s;
+    color: #7a7a7a;
+    text-align: center
+
+}
+
+
+.divTexto3:hover .texto3{
+    color:#ff043a !important;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #666666;
+   
+} */
+
+
+/* ABAJO
+
+.parrafo3 h6{
+    font-size:2em;
+    font-weight: 700;
+    text-align: end;
+    color:#ff043a
+}
+.parrafo3 h4{
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: end;
+}
+
+
+@media only screen and  (max-width: 766px){
+    .parrafo3 h6{font-size: 1.2em}
+    .parrafo3 h4{font-size: 1.7em}
+    .texto3{font-size: 1em}
+}
+ */
+
+
+
+/* estilos de el fomulatrio de contacto */
+
+
+
+

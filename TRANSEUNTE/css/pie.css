@@ -1,0 +1,185 @@
+
+
+/************* FOOTER ************/
+
+/* menuFooter */
+
+.pieUno{
+    border-top: firebrick solid 2px;
+    background-color: #4a4a4a ; 
+   padding: 0;
+}
+
+.menuFoot{
+    text-align: start 
+}
+
+.subContenedorEF{
+    
+    line-height: 60px;
+    display: inline-block;
+    padding: 0px 10px;
+    
+    z-index: 2;
+    transition-property:all;
+    transition-duration: .5S; 
+}
+
+@media only screen and (max-width: 991px){
+
+    .footerP2 h5{font-size: 1.5em !important}
+    .contenedorMenuF h2{font-size: 2.2em}
+
+
+}
+
+.subContenedorEF:hover {
+    transform: translate(1.1em );
+    border-left:solid 3px #2E2633;    
+    border-radius: 2.5%  2.5%; 
+    
+}
+.subContenedorEF:hover  .tituloDelMenu{
+    color: #cacacac9 !important;
+    text-shadow: #000 1px 2px 1px;
+    
+
+
+
+
+}
+
+
+.subContenedorEF .tituloDelMenu{
+    color: #b7b7b773 !important ;
+    transition: all; transition-duration: .2s
+    
+  
+}
+
+
+/* separador footer */
+
+.lineaVertical{
+    height: 100%;
+    background-color: #b7b7b773;
+    width: 1px;
+    opacity: .7;
+    border-radius: 60px 0px 60px 0px
+}
+
+
+
+
+
+
+/* segunda parte del footer */
+
+
+.footerP2 h5{ 
+    color: #818181 ;
+    font-size: 4vh ; 
+    line-height: 35px;
+}
+
+
+
+
+.redS img{
+    background: #b7b7b773;
+    border-radius: 50%;
+    padding: 2px;
+    width: 7vh ;   height: 7vh;
+}
+
+.redS img:hover {
+    background: #ac6565
+}
+
+
+
+/* footer  */
+
+.pieDos{
+    background-color: #000; 
+    color: #b7b7b773;
+   padding: 0;
+   margin: 0;
+    height:  20%;
+    background-color: #000;
+}
+
+
+.textF h4 {
+    font-size: 17px
+}
+.textF span {
+    font-size: 11px;
+}
+
+
+
+
+/************ SECCION (apendise) DEL MENU ********/
+/** AFECTA A LA LETRA DE AMBOS MENUS   **/
+
+
+
+
+.subContenedorE{
+    font-size: 3px;
+    
+    display: inline-block;
+    padding: 0px 10px;
+    z-index: 2;
+    transition-property:all;
+    transition-duration: .5S;  
+}
+    
+.contenedor-enlaceF h2 {
+    color: #959595 ;
+    transition-property: all;
+    transition-duration: .5s
+}
+
+.tituloDelMenuF{
+    font-size: 7Vh;
+    letter-spacing: 1vw;
+    font-weight: 900
+
+}
+
+
+/* subtitulos */
+
+.contenedor-enlace-toggle {
+    letter-spacing: 5px;
+    margin: .5em 5%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-.10em);
+    transition-property: all;
+    transition-duration: .5s
+}
+
+.subDelMenu{
+    color: #EFFFCD;
+    padding: 0;
+    font-size: 4vh;
+    letter-spacing: 1vw;
+    font-weight: bolder;  
+    margin: .5vh 0;
+    transition-duration:.5s;
+    display: inline-block;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: .5s
+}
+.subDelMenu:hover{
+    transform: translateX(-.6em);
+    
+   
+    
+}
+
+/* FIN SECCION (apendise) DEL MENU */

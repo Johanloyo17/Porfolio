@@ -1,0 +1,118 @@
+/* estilos de la pagina sevicios asdfghjk */
+*{
+     margin: 0 ;
+     padding: 0 ;
+}
+
+h1, h2 , h3,h4,h5,h6{
+    font-size: 18px;
+}
+ a{
+     text-decoration: none;
+     color: inherit;
+ }
+ a:hover{
+     text-decoration: none;
+ }
+ 
+/* esrilos de los servicios */
+.imagenServicio{
+    height: 90vh !important;
+}
+
+.imagenServicio1{
+    background-image: url(../img/Fotos-03.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.imagenServicio2{
+    background-image: url(../img/Fotos-05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagenServicio3{
+    background-image: url(../img/Fotos-04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.maldito{
+    height: 80vh !important
+}
+
+.serviciosHijos{
+      width: 100%;
+     margin: 0;
+     padding: 0;
+}
+
+
+/* ajustes de tamaño */
+/* @media only screen and  (max-width: 766px){
+    .serviciosHijos{
+       height: auto;
+    }
+    .imagenServicio{
+        height: 80vh;
+    }
+    
+} */
+     
+.serviciosHijos div{
+height: inherit;
+}
+
+
+
+     
+/* estilos de el texto de los servicios  titulos y parrafos*/
+
+.textoDiv{
+    overflow: hidden !important;
+}
+
+
+
+
+.titulo1{
+    
+     font-size: 2.2em ;
+     font-weight: 700;
+     letter-spacing: 2px;
+     
+}
+
+
+.textos{
+    height:auto !important; 
+    
+}
+
+
+
+
+.titulo2{
+     letter-spacing: 1px;
+     width: 75%;
+     font-size: 1.2em ;
+     font-weight: 600;
+     margin-bottom: 5%;
+     text-decoration: underline ;
+}
+
+.titulo3{
+     font-size: 1.3em;
+     font-weight: 550
+}
+
+
+.textos p{
+     margin-bottom: 2.5%;
+     font-size: 1em;
+     width: 60%;
+     text-align: center
+}
+
